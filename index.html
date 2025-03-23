@@ -79,13 +79,38 @@
             background-color: var(--button-hover-bg);
             color: var(--button-hover-text);
         }
+        .heart-button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            font-size: 18px;
+            background-color: transparent;
+            border: 2px solid pink;
+            color: pink;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .heart-button:hover {
+            background-color: pink;
+            color: white;
+        }
     </style>
+    <script>
+        function askName() {
+            let userName = prompt("What's your name?");
+            if (userName) {
+                alert("Hello, " + userName + "! ❤️");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <img src="IMG_6936.JPG" alt="Profile Photo" class="profile-photo">
         <h1>Hi, this is Moonyoung!</h1>
         <p>Nice to meet you. Let's get to know each other!</p>
+        <button class="heart-button" onclick="askName()">❤️</button>
+        <br>
         <a href="https://www.instagram.com/y.moonyoung" target="_blank">Follow me on Instagram</a>
         <br>
         <a href="https://blog.naver.com/ymoonyoung" target="_blank">Check out my Blog</a>
