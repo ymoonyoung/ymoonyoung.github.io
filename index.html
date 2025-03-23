@@ -84,22 +84,20 @@
             padding: 10px 15px;
             font-size: 18px;
             background-color: transparent;
-            border: 2px solid pink;
+            border: none;
             color: pink;
-            border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
+            transition: opacity 0.3s;
         }
         .heart-button:hover {
-            background-color: pink;
-            color: white;
+            opacity: 0.7;
         }
     </style>
     <script>
         function askName() {
             let userName = prompt("What's your name?");
             if (userName) {
-                alert("Hello, " + userName + "! ❤️");
+                alert("Hello, " + userName + "! 🩷");
             }
         }
     </script>
@@ -109,7 +107,7 @@
         <img src="IMG_6936.JPG" alt="Profile Photo" class="profile-photo">
         <h1>Hi, this is Moonyoung!</h1>
         <p>Nice to meet you. Let's get to know each other!</p>
-        <button class="heart-button" onclick="askName()">❤️</button>
+        <button class="heart-button" onclick="askName()">Click me! 🩷</button>
         <br>
         <a href="https://www.instagram.com/y.moonyoung" target="_blank">Follow me on Instagram</a>
         <br>
